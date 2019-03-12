@@ -1,0 +1,7 @@
+FuzzyWuzzy has been developed and open-sourced by SeatGeek, a service to find sport and concert tickets. Their original use case, as discussed in their blog, was the problem given by the many different ways of labelling the same event, adding or hiding location, dates, venue, etc. This problem is also arising with different entities like persons or companies.
+
+To install the library, you can use pip as usual:
+
+The main modules in FuzzyWuzzy are called fuzz, for string-to-string comparisons, and process to compare a string with a list of strings.
+
+Under the hood, FuzzyWuzzy uses difflib, part of the standard library, so there is nothing extra to install. We can anyway benefit from the performance of python-Levenshtein for sequence matching, so let’s also install this library:

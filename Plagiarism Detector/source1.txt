@@ -1,0 +1,6 @@
+Fuzzy String Matching, also called Approximate String Matching, is the process of finding strings that approximatively match a given pattern.
+The closeness of a match is often measured in terms of edit distance, which is the number of primitive operations necessary to convert the string into an exact match. Primitive operations are usually: insertion (to insert a new character at a given position), deletion (to delete a particular character) and substitution (to replace a character with a new one).
+
+Fuzzy String Matching can have different practical applications. Typical examples are spell-checking, text re-use detection (the politically correct way of calling plagiarism detection), spam filtering, as well as several applications in the bioinformatics domain, e.g. matching DNA sequences.
+
+This article plays around with fuzzywuzzy, a Python library for Fuzzy String Matching.

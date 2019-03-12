@@ -1,0 +1,36 @@
+<!doctype html>
+
+<html>
+    <head>
+        <title>
+            Plagiarism Detector
+        </title>
+    </head>
+    
+    <body>
+        <h2>Plagiarism Detector</h2>
+        <h3>A web app to detect plagiarism between input and source text file</h3>
+        
+        <form action="/plagiarismDetection" method="post">
+            <table>
+                <thead></thead>
+                
+                <tbody>
+                    <tr>
+                        
+                        <td>
+                            <textarea id="inputText" rows="5" cols="50" placeholder="Enter your input here ..." name="inputText">{{text}}</textarea>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td><input type="submit" id="submitBtn" value="Check Plagiarism"></td>
+                    </tr>
+                </tbody>
+            </table>            
+        </form>
+        
+        <h3>{{result}}</h3>
+    </body>
+
+</html>
