@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Booth's Multiplication</title>
+    </head>
+    
+    <body>
+        <h3>Web App for Booths Multiplication</h3>
+        <h4>Note:</h4>
+        <h4>1. Multiplicand And Multiplier are fetched from remote host using Sockets</h4>
+        <h4>2. Run server1.py and server2.py before opening this page</h4>
+        <form method="post" action="/boothsMultiplication">
+            
+            <table>
+                <thead>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <label for="multiplier">Multiplier</label>
+                        </td>
+                        <td>:</td>
+                        <td>
+                            <input type="text" id="multiplier" name="multiplier" value={{multiplier}}>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>
+                            <label for="multiplicand">Multiplicand</label>
+                        </td>
+                        <td>:</td>
+                        <td>
+                            <input type="text" id="multiplicand" name="multiplicand" value={{multiplicand}}>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td>            
+                            <input type="submit" value="Multiply" id="submitBtn">
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </form>
+        
+        {{result}}
+    </body>
+</html>
